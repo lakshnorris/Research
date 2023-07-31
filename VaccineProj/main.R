@@ -38,3 +38,6 @@ model_result <- build_predictive_model(data)
 
 # Result Reporting
 generate_summary_report(efficacy_result, adverse_events, subgroup_results, immunogenicity_results, model_result)
+
+# Adding new subgroup
+subgroup_data <- adding_subgroup_data(data$age, data$gender, data$efficacy)
